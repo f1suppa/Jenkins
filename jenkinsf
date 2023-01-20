@@ -1,0 +1,22 @@
+pipeline {
+
+   agent any
+   stages {
+       stage("init"){
+           steps{
+               sh "echo this is the 1st project"
+           }
+       }
+       stage("second"){
+           steps{
+               sh "echo this is the 2nd project"
+           }
+       }
+       stage("third"){
+           steps{
+               sh "echo this is the 3rd project"
+           }
+       }
+   }
+
+}
