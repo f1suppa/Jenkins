@@ -7,12 +7,12 @@ pipeline {
                 sh 'echo this first stage'
             }
         }
-        stage('secondstage'){
+        stage('2nd stage'){
             steps{
                 sh 'echo 2nd stage'
             }
         }
-        stage('3stage'){
+        stage('3rd stage'){
             steps{
                 sh 'echo this 3rd stage'
             }
