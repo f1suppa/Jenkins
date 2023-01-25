@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('init'){
             steps{
-                sh 'echo ${env.BRANCH_NAME}'
+                
                 sh 'echo this first stage'
             }
         }
