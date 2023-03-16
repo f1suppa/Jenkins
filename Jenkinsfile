@@ -1,5 +1,3 @@
-currentBuild.displayName = "test-ui # "+currentBuild.number
-
 pipeline {
 
     agent any
@@ -11,8 +9,13 @@ pipeline {
             }
         }
         stage('secondstage'){
+            agent {
+                docker {
+                    image 'maven'
+                }
+            }
             steps{
-                sh 'echo 2nd stage'
+                sh 'mvn --version'
             }
         }
         stage('3stage'){
